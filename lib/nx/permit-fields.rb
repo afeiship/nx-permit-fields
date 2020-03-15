@@ -11,8 +11,8 @@ module Nx
       }
 
       options = default_options.merge(in_options)
-      Clazz = Kernel.const_get(in_table_name.capitalize)
-      fileds = Clazz.columns_hash.keys.map(&:to_sym)
+      clazz = Kernel.const_get(in_table_name.capitalize)
+      fields = clazz.columns_hash.keys.map(&:to_sym)
       fields - options[:base_fields] - options[:fields]
     end
   end
