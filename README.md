@@ -31,7 +31,7 @@ gem 'nx-permit-fields', git: 'git@github.com:afeiship/nx-permit-fields.git'
 
 Nx::PermitFields::exclude(:post, fields:[:ext, :image_marked])
 # after:
-[
+# [
 #     :title, 
 #     :summary, 
 #     :image, 
