@@ -54,3 +54,6 @@ gem build nx-permit-fields.gemspec
 # publish
 gem push nx-permit-fields-0.1.0.gem
 ```
+
+## resources
+- https://stackoverflow.com/questions/1235593/ruby-symbol-to-class
