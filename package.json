@@ -1,0 +1,24 @@
+{
+  "name": "nx-permit-fields",
+  "version": "1.0.0",
+  "description": "Permit fields for rails.",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "clean": "rm -rf *.gem",
+    "build": "gem build *.gemspec",
+    "pubpush": "gem push *.gem",
+    "unpublish":"gem yank nx-http -v '0.1.0'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afeiship/nx-permit-fields.git"
+  },
+  "author": "afei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/afeiship/nx-permit-fields/issues"
+  },
+  "homepage": "https://github.com/afeiship/nx-permit-fields#readme"
+}
