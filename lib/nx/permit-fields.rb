@@ -1,6 +1,6 @@
 module Nx
   class PermitFields
-    def self.exclude(in_table_name, in_options)
+    def self.exclude(in_table_name, in_options = {})
       default_options = {
         base_fields: [
           :id,
