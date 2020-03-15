@@ -11,12 +11,39 @@ gem 'nx-permit-fields', git: 'git@github.com:afeiship/nx-permit-fields.git'
 
 ## usage
 ```rb
+# before: --------------------------------
+
+# [
+#     :title, 
+#     :summary, 
+#     :image, 
+#     :douban_rate, 
+#     :author, 
+#     :translator, 
+#     :publishing_house, 
+#     :publishing_at, 
+#     :ext, 
+#     :catalogue, 
+#     :douban_url, 
+#     :image_marked, 
+#     :isbn
+# ]
+
 Nx::PermitFields::exclude(:post, fields:[:ext, :image_marked])
-
-# [:title, :summary, :image, :douban_rate, :author, :translator, :publishing_house, :publishing_at, :ext, :catalogue, :douban_url, :image_marked, :isbn]
-
 # after:
-# [:title, :summary, :image, :douban_rate, :author, :translator, :publishing_house, :publishing_at, :catalogue, :douban_url, :isbn]
+[
+#     :title, 
+#     :summary, 
+#     :image, 
+#     :douban_rate, 
+#     :author, 
+#     :translator, 
+#     :publishing_house, 
+#     :publishing_at, 
+#     :catalogue, 
+#     :douban_url, 
+#     :isbn
+# ]
 ```
 
 ## build/publish
